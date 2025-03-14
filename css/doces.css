@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --escuro: #a6655d;
+  --claro: #ffa3c4;
+}
+
+.menu__link:not(:nth-of-type(3)) {
+  color: var(--claro);
+}
+
+.menu__link:not(:nth-of-type(3)):hover {
+  color: #000;
+}
+
+.menu__link:nth-of-type(3) {
+  color: #000;
+}
+
+.menu__link:nth-of-type(3):hover {
+  color: var(--claro);
+}
+
+.doces {
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rem 2%;
+}
+
+.doces__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0 6rem;
+}
+
+.doces__container__card {
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 2%;
+}
+
+.card__doces {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.card__doces__box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(177, 121, 114, 0.82);
+  padding: 4rem;
+  border-radius: 16px;
+  width: 70%;
+  position: relative;
+  left: -20px;
+  z-index: -1;
+}
+
+.card__doces__box__titulo {
+  font-family: "Lobster", sans-serif;
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 15px;
+  margin-left: -2rem;
+  white-space: nowrap;
+}
+
+.card__doces__box__descricao {
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin-left: -2rem;
+}
+
+.card__doces__box--oval {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(177, 121, 114, 0.82);
+  padding: 4rem;
+  border-radius: 50%;
+  width: 70%;
+  position: relative;
+  left: -20px;
+  z-index: -1;
+}
+
+.card__doces__invertido {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: -30px;
+  margin-bottom: 3rem;
+  flex-direction: row-reverse;
+}
+
+.card__doces__imagem--invertido {
+  position: relative;
+  left: -30px;
+}
+
+.card__doces__box--oval--invertido {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(177, 121, 114, 0.82);
+  padding: 4rem;
+  border-radius: 50%;
+  width: 70%;
+  position: relative;
+  right: -20px;
+  z-index: -1;
+}
+
+.card__doces__livre {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-right: -70px;
+}
+
+.card__doces__imagem--livre {
+  position: relative;
+  left: 0;
+}
+
+.card__doces__box--livre {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(177, 121, 114, 0.82);
+  padding: 4rem;
+  border-radius: 16px;
+  width: 100%;
+  position: relative;
+  top: 190px;
+  left: -120px;
+  z-index: -1;
+}

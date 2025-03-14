@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --escuro: #a6655d;
+  --claro: #ffa3c4;
+}
+
+.menu__link:not(:nth-of-type(5)) {
+  color: var(--claro);
+}
+
+.menu__link:not(:nth-of-type(5)):hover {
+  color: #000;
+}
+
+.menu__link:nth-of-type(5) {
+  color: #000;
+}
+
+.menu__link:nth-of-type(5):hover {
+  color: var(--claro);
+}
+
+.login {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 2%;
+}
+
+.login__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__container__imagem {
+  width: 50%;
+  padding: 1rem;
+}
+
+.container__imagem__image {
+  width: 100%;
+}
+
+.login__container__formulario {
+  width: 33%;
+  padding: 1rem;
+}
+
+.container__formulario__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__formulario__form input {
+  margin: 1rem;
+  line-height: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid #b37b74;
+  background-color: #b37b74;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  font-family: "Livvic", sans-serif;
+}
+
+.container__formulario__form input::placeholder {
+  color: #000;
+}
+
+.container__formulario__form input:focus {
+  outline: 3px solid var(--claro);
+}
+
+.container__formulario__form button {
+  width: 60%;
+  margin: 1rem;
+  line-height: 1.5rem;
+  border-radius: 16px;
+  background-color: #000;
+  color: var(--claro);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.container__formulario__form button:hover {
+  background-color: var(--claro);
+  color: #000;
+}
+
+.container__formulario__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.formulario__redes__icones {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1rem;
+  transition: 0.5s ease;
+}
+
+.formulario__redes__icones:hover {
+  transform: scale(1.2);
+  overlay: var(--claro);
+}
+
+.redes__icones__image {
+  width: 30%;
+  height: 30%;
+}
+
+.login__container__box {
+  width: 33%;
+  padding: 0 2rem 5rem;
+  background-color: #b37b74;
+  border-radius: 16px;
+}
+
+.box__image__imagem {
+  width: 20%;
+  margin-bottom: 1.5rem;
+}
+
+.login__container__box__texto {
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: center;
+}

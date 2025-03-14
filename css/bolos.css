@@ -1,0 +1,122 @@
+:root {
+  --escuro: #a6655d;
+  --claro: #ffa3c4;
+}
+
+.menu__link:hover {
+  color: #000000;
+}
+
+.menu__link:not(:nth-of-type(2)) {
+  color: var(--claro);
+}
+
+.menu__link:not(:nth-of-type(2)):hover {
+  color: #000;
+}
+
+.menu__link:nth-of-type(2) {
+  color: #000;
+}
+
+.menu__link:nth-of-type(2):hover {
+  color: var(--claro);
+}
+
+.bolos {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bolos__header {
+  background-color: var(--escuro);
+  min-height: 234px;
+  display: flex;
+}
+
+.bolos__header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 5%;
+}
+
+.bolos__header__container__titulo {
+  font-family: "Lobster", sans-serif;
+  font-size: 50px;
+  width: 50%;
+}
+
+.bolos__header__container__images {
+  width: 50%;
+  text-align: right;
+  display: flex;
+}
+
+.bolos__header__container__image {
+  width: 144px;
+  height: 144px;
+}
+
+.cardapio-bolos {
+  padding: 2rem 0;
+}
+
+.cardapio-bolos__container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cardapio-bolos__container__card {
+  background-color: var(--claro);
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%;
+  justify-content: stretch;
+  border-radius: 8px;
+}
+
+.cardapio-bolos__container__card:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.cardapio-bolos__card__image {
+  width: 300px;
+  height: 300px;
+}
+
+.cardapio-bolos__card__texto {
+  width: 50%;
+  background-color: rgba(177, 121, 114, 0.82);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: right;
+}
+
+.cardapio-bolos__container__card:nth-of-type(even)
+  .cardapio-bolos__card__texto {
+  text-align: left;
+}
+
+.card__texto__titulo {
+  font-family: "Lobster", sans-serif;
+  font-size: 32px;
+}
+
+.card__texto__descricao {
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+}
+
+.card__texto__preco {
+  font-family: "lobster", sans-serif;
+  font-size: 50px;
+  margin-top: 50px;
+}

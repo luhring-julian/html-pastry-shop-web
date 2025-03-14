@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --escuro: #a6655d;
+  --claro: #ffa3c4;
+}
+
+.menu__link:not(:nth-of-type(4)) {
+  color: var(--claro);
+}
+
+.menu__link:not(:nth-of-type(4)):hover {
+  color: #000;
+}
+
+.menu__link:nth-of-type(4) {
+  color: #000;
+}
+
+.menu__link:nth-of-type(4):hover {
+  color: var(--claro);
+}
+
+.sobre {
+  width: 100%;
+  margin: 0 auto;
+  padding: 6rem 2%;
+}
+
+.sobre__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sobre__container__imagem {
+  display: flex;
+  width: 40%;
+  justify-content: left;
+}
+
+.sobre__container__texto {
+  width: 50%;
+}
+
+.sobre__container__texto__titulo {
+  font-family: "Lobster", sans-serif;
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sobre__container__texto__paragrafo {
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: justify;
+  line-height: 2rem;
+  text-indent: 1.5rem;
+}
+
+.sobre__container__texto__box {
+  background-color: var(--claro);
+  border-radius: 16px;
+  padding: 1.5rem 3rem;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.sobre__container__texto__box__paragrafo {
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.sobre__container__texto__box__lista {
+  list-style-position: inside;
+  font-family: "Livvic", sans-serif;
+  font-size: 18px;
+  color: #000;
+  text-align: left;
+}
+
+.sobre__container__botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem;
+}
+
+.sobre__container__botoes__links {
+  background-color: var(--claro);
+  border-radius: 16px;
+  padding: 15px 59px;
+  font-family: "livvic", sans-serif;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.sobre__container__botoes__links:hover {
+  background-color: var(--escuro);
+}

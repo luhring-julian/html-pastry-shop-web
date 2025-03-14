@@ -1,0 +1,208 @@
+/* Definições */
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+:root {
+  --escuro: #a6655d;
+  --claro: #ffa3c4;
+}
+
+body {
+  height: 100vh;
+}
+
+/* Cabecalho */
+.cabecalho {
+  background-image: url(../images/menu-background.png);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+  width: 100%;
+  height: 192px;
+  display: flex;
+  align-items: center;
+}
+
+.cabecalho__container {
+  background: rgba(146, 88, 82, 0.8);
+  display: flex;
+  width: 100%;
+  margin: 52px 14px 48px;
+  border-radius: 24px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 11px 0;
+}
+
+.cabecalho__container__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.logo__titulo {
+  font-family: "Lobster", sans-serif;
+  font-size: 30px;
+  color: var(--claro);
+}
+
+.logo__subtitulo {
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  color: var(--claro);
+}
+
+.cabecalho__menu {
+  display: flex;
+  margin: 0 5%;
+}
+
+.cabecalho__menu__desktop {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--claro);
+  font-family: "Lobster", sans-serif;
+  font-size: 24px;
+  padding: 1rem;
+}
+
+.menu__link:hover {
+  color: #000000;
+}
+
+.menu__link:nth-of-type(1) {
+  color: #000;
+}
+
+.menu__link:nth-of-type(1):hover {
+  color: var(--claro);
+}
+
+.menu__login {
+  width: 15px;
+  height: 15px;
+}
+
+.cabecalho__menu__mobile {
+  display: none;
+}
+
+.cabecalho__menu__logo {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Main */
+.apresentacao {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.apresentacao__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.apresentacao__container__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 0 2.15em 0;
+}
+
+.apresentacao__container__card:nth-of-type(even) {
+  flex-flow: row-reverse;
+  text-align: right;
+}
+
+.card__image {
+  border-radius: 16px;
+  width: 50%;
+  overflow: hidden;
+}
+
+.card__texto {
+  width: 50%;
+  font-family: "Livvic", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: rgba(166, 101, 93, 0.66);
+  align-content: center;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* Rodapé */
+.backToTop__icon {
+  width: 30px;
+  height: 30px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--escuro);
+  color: white;
+  border: none;
+  padding: 16px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: none; /* Inicialmente oculto */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#backToTop:hover {
+  background-color: var(--claro);
+}
+
+.rodape {
+  background-color: var(--escuro);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.rodape__texto {
+  font-family: "Livvic", sans-serif;
+  font-size: 20px;
+  color: var(--claro);
+}
