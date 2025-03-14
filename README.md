@@ -9,7 +9,7 @@ Layout das páginas, foi baseado no design que foi criado para a empresa e está
 
 ## 🖥️ Visualize o projeto
 
-[url-do-projeto](url-do-projeto)
+[https://luhring-julian.github.io/html-pastry-shop-web/](https://luhring-julian.github.io/html-pastry-shop-web/)
 
 ## ️⚙️ Tecnologias Usadas
 
